@@ -9,7 +9,7 @@ pipeline{
     stages{
         stage("Git Clone"){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/009Shreyash/Bookzy_SL.git']])   
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/009Shreyash/bookzy-project.git']])   
             }
         }
         stage("Test"){
